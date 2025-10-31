@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    background-color: #0099ff;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 300px;
+}
+
+.container input,
+.container button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#sumButton {
+    background-color: #0099ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+#sumButton:hover {
+    background-color: #007acc;
+}
+
+/* 🔹 Parte inferior (resultado) */
+.lower-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+    gap: 10px;
+    padding-right: 30px; /* afasta do canto direito */
+    
+
+}
+
+#result {
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+.empty {
+    min-width: 60px;
+    max-width: 100px; /* ou o tamanho que quiser */
+    overflow-x: auto;
+    white-space: nowrap;
+    text-align: center;
+    background-color: #0099ff;
+    border-radius: 4px;
+    padding: 5px;
+}
